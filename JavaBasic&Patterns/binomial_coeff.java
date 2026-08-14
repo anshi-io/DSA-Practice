@@ -12,6 +12,7 @@ public class binomial_coeff {
             product *= i;
         }
         return product;
+    
     }
 
     public static int binCoeff(int n, int r) {
