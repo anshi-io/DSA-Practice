@@ -2,12 +2,18 @@ import java.util.*;
 public class printSubarray {
   public static void getsubArr(int numArr[]){
     int totalSubarr=0;//to count total subarrays
+    
       for (int i=0;i<numArr.length;i++){
+        
         for(int j=i;j<numArr.length;j++){//we want element as a single subArray
+          int sum_subarr=0;
           for(int k = i;k<=j;k++){
             System.out.print(numArr[k]);
+            sum_subarr=sum_subarr+numArr[k];
+            
           }
           totalSubarr++;
+          System.out.println(" sum of this subarray:"+sum_subarr);
           System.out.println();
         }
         System.out.println();
