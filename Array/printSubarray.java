@@ -2,11 +2,12 @@ import java.util.*;
 public class printSubarray {
   public static void getsubArr(int numArr[]){
     int totalSubarr=0;//to count total subarrays
-    
+      int sum_subarr=0;
+      int maximum=Integer.MIN_VALUE;
       for (int i=0;i<numArr.length;i++){
         
         for(int j=i;j<numArr.length;j++){//we want element as a single subArray
-          int sum_subarr=0;
+            sum_subarr=0;
           for(int k = i;k<=j;k++){
             System.out.print(numArr[k]);
             sum_subarr=sum_subarr+numArr[k];
@@ -14,10 +15,23 @@ public class printSubarray {
           }
           totalSubarr++;
           System.out.println(" sum of this subarray:"+sum_subarr);
+          //maximum and minimum sum of subarray
+          
+            
+            // int minimum=Integer.MAX_VALUE;
+            if(maximum<sum_subarr){
+            maximum=sum_subarr;
+            }
+          //  if(minimum>sum_subarr){
+          //   minimum=sum_subarr;
+          //   }
           System.out.println();
         }
+
+        
         System.out.println();
       }
+      System.out.println("maximum sum of subarray is: "+maximum);
       System.out.println("Total subarrays of the array is:"+totalSubarr);
       
   }
