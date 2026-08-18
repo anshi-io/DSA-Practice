@@ -59,4 +59,3 @@ One `git push` at a time. 🚀
 
 **B.Tech CSE | Java | DSA | Full Stack Development**
 
-[⭐ Explore the code →](https://github.com/anshi-io/DSA-Practice)
